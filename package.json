@@ -1,0 +1,28 @@
+{
+  "name": "testcafe-reporter-prometheus",
+  "version": "1.0.0",
+  "description": "prometheus TestCafe reporter plugin.",
+  "repository": "https://github.com/steffenmllr/testcafe-reporter-prometheus",
+  "author": {
+    "name": "Steffen Müller",
+    "email": "steffen@mllrsohn.com"
+  },
+  "main": "src/index",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "testcafe",
+    "reporter",
+    "plugin"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "callsite-record": "^3.2.2",
+    "testcafe": "0.20.0"
+  },
+  "dependencies": {
+    "bowser": "^2.1.0",
+    "prom-client": "^11.2.1"
+  }
+}
