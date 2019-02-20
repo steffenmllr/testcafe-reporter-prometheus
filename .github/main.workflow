@@ -5,7 +5,7 @@
 workflow "Test on Push" {
   on = "push"
   resolves = [
-    "Test on Push"
+    "Test"
   ]
 }
 
@@ -15,7 +15,7 @@ action "Install packages" {
   args = ["-c", "npm i"]
 }
 
-action "Test on Push" {
+action "Test" {
   uses = "docker://node:11"
   needs = ["Install packages"]
   runs = "/bin/sh"
