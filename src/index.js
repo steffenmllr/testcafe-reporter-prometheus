@@ -45,7 +45,7 @@ module.exports = () => {
         noColors: true,
 
         reportTaskStart(startTime, userAgents, testCount) {
-            testTotal.set(testCount, new Date(startTime));
+            testTotal.set(testCount);
             this.startTime = startTime;
 
             // We want to report per Browser
