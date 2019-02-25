@@ -5,11 +5,12 @@ const report = createReport(true);
 const expected = `# HELP test_passed Successfull passed tests
 # TYPE test_passed gauge
 test_passed{browser="Chrome"} 5
-test_passed{browser="Firefox",version="47"} 6
+test_passed{browser="Firefox",version="47"} 4
 
 # HELP test_failed Failed Tests
 # TYPE test_failed gauge
 test_failed{browser="Chrome"} 1
+test_failed{browser="Firefox",version="47"} 2
 
 # HELP test_skipped Skipped Tests
 # TYPE test_skipped gauge

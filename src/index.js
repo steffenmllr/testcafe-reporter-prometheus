@@ -84,9 +84,9 @@ module.exports = () => {
             this.userAgents.forEach(ua => {
                 const error = testRunInfo.errs.find(err => err.userAgent === ua.ua);
                 if (error) {
-                    testPassed.inc(ua.label, 1);
-                } else {
                     testFailed.inc(ua.label, 1);
+                } else {
+                    testPassed.inc(ua.label, 1);
                 }
             });
         },
