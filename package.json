@@ -1,6 +1,6 @@
 {
   "name": "testcafe-reporter-prometheus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "prometheus TestCafe reporter plugin.",
   "repository": "https://github.com/steffenmllr/testcafe-reporter-prometheus",
   "author": {
